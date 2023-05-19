@@ -1,6 +1,126 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "poppins";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/********************************* Header Starts Here ***************************/
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/headerBG2.webp");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-content {
+  height: calc(100vh - 8rem);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content .content-div {
+  color: white;
+  text-align: center;
+  width: 50%;
+}
+
+.header-content .content-div h3 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.header-content .content-div h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  color: #ffa500;
+}
+.header-btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.header-btn-div .aboutBtn,
+.header-btn-div .contactBtn {
+  padding: 1rem 3rem;
+  background-color: #ffa500;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  border: 2px solid #ffa500;
+  transition:  all .3s ease-in-out;
+}
+
+.header-btn-div .contactBtn {
+  border: 2px solid #ffa500;
+  background-color: transparent;
+}
+
+.header-btn-div .contactBtn:hover { 
+  background-color: #ffa500;
+}
+
+.header-btn-div .aboutBtn:hover { 
+  background-color: transparent;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10rem;
+  height: 8rem;
+  background-color: #ffffff1f;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.navbar .logo {
+  font-size: 2.5rem;
+  width: 1rem;
+  color: #ffa500;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar ul li a:hover,
+.active {
+  background-color: #ffa500;
 }
