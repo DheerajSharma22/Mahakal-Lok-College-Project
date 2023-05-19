@@ -9,12 +9,29 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+/************************************* Utility Classes *************************************/
+.container {
+  padding: 0 10rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
 }
 
 /********************************* Header Starts Here ***************************/
@@ -70,7 +87,7 @@ header {
   font-weight: 400;
   border-radius: 0.5rem;
   border: 2px solid #ffa500;
-  transition:  all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-btn-div .contactBtn {
@@ -78,11 +95,11 @@ header {
   background-color: transparent;
 }
 
-.header-btn-div .contactBtn:hover { 
+.header-btn-div .contactBtn:hover {
   background-color: #ffa500;
 }
 
-.header-btn-div .aboutBtn:hover { 
+.header-btn-div .aboutBtn:hover {
   background-color: transparent;
 }
 
@@ -123,4 +140,158 @@ header {
 .navbar ul li a:hover,
 .active {
   background-color: #ffa500;
+}
+
+/**************************** Section 1 Starts Here ****************************/
+#section-1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+#section-1 .leftDiv,
+#section-1 .rightDiv {
+  width: 100%;
+  height: 100%;
+}
+
+#section-1 .leftDiv img {
+  width: 100%;
+}
+
+#section-1 .rightDiv h2 {
+  font-size: 6rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: #203040;
+}
+
+#section-1 .rightDiv p {
+  font-size: 1.8rem;
+  text-align: justify;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+#section-1 .rightDiv .btn {
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #ffa500;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#section-1 .rightDiv .btn a {
+  color: black;
+}
+
+/**************************** Section 2 Starts Here ****************************/
+
+#section-2 {
+  height: 100vh;
+  width: 100vw;
+  background: url("../img/headerBG1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+#section-2::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ff9800e6;
+  opacity: 80%;
+  z-index: -2;
+}
+
+#section-2 .leftDiv {
+  width: 100%;
+  text-align: center;
+}
+#section-2 .leftDiv img {
+  width: 80%;
+  /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); */
+  filter: drop-shadow(5px 5px 5px #444);
+}
+
+#section-2 .rightDiv h2 {
+  font-size: 6rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+#section-2 .rightDiv p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+#cardsContainer {
+  position: absolute;
+  bottom: -40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#cardsContainer .card {
+  text-align: center;
+  padding: 5rem 3rem;
+  width: 25rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.1);
+}
+
+
+#cardsContainer .card .middleLine {
+  width: 50%;
+  height: 0.2rem;
+  background-color: #b6fffc;
+  margin-bottom: 2rem;
+}
+#cardsContainer .card img {
+  background: linear-gradient(-45deg, #cfcf, #06f);
+  border-radius: 50%;
+  padding: 2rem;
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+#cardsContainer .card img.card-img-2 {
+  background: linear-gradient(-45deg, #ff0f47, #ff9797);
+}
+
+#cardsContainer .card img.card-img-3 {
+  background: linear-gradient(-45deg, #b200e5, #b6fffc);
+}
+
+#cardsContainer .card h4 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+#cardsContainer .card p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #666;
+  line-height: 2.5rem;
 }
