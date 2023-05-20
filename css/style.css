@@ -34,6 +34,14 @@ a {
   width: 100%;
 }
 
+.section-heading {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #203040;
+  margin-bottom: 3rem;
+}
+
 /********************************* Header Starts Here ***************************/
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -114,6 +122,16 @@ header {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
 }
 
+.navbarOnScroll {
+  position: fixed;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.navbarOnScroll ul li a {
+  color: black!important;
+}
+
 .navbar .logo {
   font-size: 2.5rem;
   width: 1rem;
@@ -146,9 +164,10 @@ header {
 #section-1 {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: #fff8f9;
 }
 
 #section-1 .leftDiv,
@@ -240,9 +259,18 @@ header {
   color: white;
 }
 
+/**************************** Section 3 Starts Here ****************************/
+#section-3 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0fffff1f;
+}
+
 #cardsContainer {
-  position: absolute;
-  bottom: -40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -260,7 +288,6 @@ header {
   flex-direction: column;
   box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.1);
 }
-
 
 #cardsContainer .card .middleLine {
   width: 50%;
@@ -294,4 +321,41 @@ header {
   font-weight: 500;
   color: #666;
   line-height: 2.5rem;
+}
+
+/**************************** Section 4 Starts Here ****************************/
+#section-4 {
+  padding: 6rem 0;
+  background-color: #fff8f9;
+  
+}
+
+#section-4 .container div {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+}
+
+#section-4 .container div .history-heading {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #203040;
+}
+
+#section-4 .container div p {
+  line-height: 3rem;
+  font-size: 1.4rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/**************************** Footer Starts Here ****************************/
+footer {
+  padding: 2rem;
+  text-align: center;
+  box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
