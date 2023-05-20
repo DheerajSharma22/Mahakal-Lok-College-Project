@@ -119,13 +119,15 @@ header {
   padding: 0 10rem;
   height: 8rem;
   background-color: #ffffff1f;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbarOnScroll {
   position: fixed;
   width: 100vw;
   background-color: #fff;
+  top: 0;
+  left: 0;
 }
 
 .navbarOnScroll ul li a {
@@ -359,3 +361,4 @@ footer {
   font-weight: 600;
   text-transform: uppercase;
 }
+
