@@ -13,6 +13,7 @@ if (window.location.pathname == "/") {
   });
 }
 
+// Code for fixing position of navbar on page scroll
 window.onscroll = () => {
   if (window.pageYOffset == 0) {
     navbar.classList.remove("navbarOnScroll");
